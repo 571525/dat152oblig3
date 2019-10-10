@@ -238,7 +238,7 @@
         float: left;
     }
 
-    #car-list-div h1, #res-form-order-page h1, #recap-div h1 {
+    h2 {
         margin-bottom: 1em;
     }
 

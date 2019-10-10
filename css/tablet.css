@@ -118,7 +118,7 @@
     #order-button-guest, #res-form-order-page button {
         background-color: #ffd100;
         color: black;
-        border: 2px solid darkblue;
+        border: 2px solid #ffd100;
     }
 
     #order-button-member:hover {
@@ -207,7 +207,7 @@
         float: left;
     }
 
-    #car-list-div h1, #res-form-order-page h1 {
+    h2 {
         margin-bottom: 1em;
     }
 
