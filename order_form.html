@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order page</title>
+    <link type="text/css" rel="stylesheet" href="css/desktop.css"/>
+    <link type="text/css" rel="stylesheet" href="css/mobile.css"/>
+    <link type="text/css" rel="stylesheet" href="css/tablet.css"/></head>
+<body>
+
+<nav role="navigation" class="nav-bar">
+    <div class="top-nav">
+        <a href="index.html"><img id="logo" src="images/logo_hertz_app.png" alt="Hertz logo, click for home"></a>
+        <form class="language-chooser" name="choose language">
+            <label class="language-label" for="languages">En/en</label>
+            <select name="languages" id="languages">
+                <option name="english" value="english">
+                    English
+                </option>
+                <option name="norsk" value="norsk">
+                    Norsk
+                </option>
+                <option name="deutsch" value="deutsch">
+                    Deutsch
+                </option>
+            </select>
+            <div id="line-between-lan-and-sign"></div>
+        </form>
+        <div class="sign-up-button">
+            <a href="service_not_implemented_yet.html">Log In/Sign Up</a>
+        </div>
+    </div>
+    <ul class="menu-bar">
+        <li><a href="car_list.html">CAR GUIDE</a></li>
+        <li><a href="index.html">CAR HIRE</a></li>
+        <li><a href="service_not_implemented_yet.html">LOCATIONS</a></li>
+        <li><a href="service_not_implemented_yet.html">BUSINESS HIRE</a></li>
+        <li><a href="service_not_implemented_yet.html">OFFERS</a></li>
+        <li><a href="service_not_implemented_yet.html">HELP</a></li>
+        <li><a href="service_not_implemented_yet.html">GOLD PLUS REWARDS</a></li>
+    </ul>
+    <nav role="navigation" id="collapsed-menu">
+        <button onclick=openmenu()>MENU</button>
+        <ul id="collapsed-menu-bar" class="hide-collapsed-menu">
+            <li><a href="car_list.html">CAR GUIDE</a></li>
+            <li><a href="index.html">CAR HIRE</a></li>
+            <li><a href="service_not_implemented_yet.html">LOCATIONS</a></li>
+            <li><a href="service_not_implemented_yet.html">BUSINESS HIRE</a></li>
+            <li><a href="service_not_implemented_yet.html">OFFERS</a></li>
+            <li><a href="service_not_implemented_yet.html">HELP</a></li>
+            <li><a href="service_not_implemented_yet.html">GOLD PLUS REWARDS</a></li>
+            <li>
+                <label class="language-label" for="languages_collapsed">EN/en</label>
+                <select name="languages" id="languages_collapsed">
+                    <option name="english" value="english">
+                        English
+                    </option>
+                    <option name="norsk" value="norsk">
+                        Norsk
+                    </option>
+                    <option name="deutsch" value="deutsch">
+                        Deutsch
+                    </option>
+                </select>
+            </li>
+            <li><a href="service_not_implemented_yet.html">LOG IN/SIGN UP</a></li>
+        </ul>
+    </nav>
+</nav>
+
+<div id="res-form-order-page">
+    <h1>Order form</h1>
+    <form id="order-form" action="recap_page.html">
+        <div>
+            <label for="name">Name:</label><span class="red-text">(required)</span><input type="text" id="name" placeholder="Full name" required>
+        </div>
+        <label for="email">Email:</label><span class="red-text">(required)</span><input type="email" id="email" required>
+        <fieldset id="disabled-info" disabled="disabled">
+            <div>
+                <label for="place-or-citycode">Place/city/airportcode:</label><input id="place-or-citycode" type="text" value="FLE1234">
+            </div>
+            <div>
+                <h3>Pickup:</h3>
+                <label for="pickup-input"><p>(DD.MM.YYYY)</p></label>
+                <input type="date" id="pickup-input" value="2020-02-02">
+                <label for="pickup-time"><p>Time:</p></label><input type="time" id="pickup-time" value="20:00">
+            </div>
+            <div>
+                <h3>Return:</h3>
+                <label for="return-input"><p>(DD.MM.YYYY)</p></label>
+                <input type="date" id="return-input" value="2020-10-02">
+                <label for="return-time"><p>Time:</p></label><input type="time" id="return-time" value="20:20">
+            </div>
+            <div>
+                <label for="car-type">Category:</label><select id="car-type">
+                <option value="A" value="A">A</option>
+                <option value="B" value="B">B</option>
+                <option value="C" value="C">C</option>
+                <option value="D" value="D">D</option>
+                <option value="EL" value="EL">EL</option>
+            </select>
+            </div>
+            <div>
+                <input type="checkbox" id="use-reward-points-checkbox" checked><label for="use-reward-points-checkbox">Use
+                my
+                Rewardspoints</label>
+            </div>
+            <div>
+                <input type="checkbox" id="i-have-discount-checkbox"><label for="i-have-discount-checkbox">I have
+                discount (CDP, PC, Coupong or different code -</label>
+            </div>
+        </fieldset>
+    </form>
+    <button class="order-button" onclick="function removeDisable() {
+            let a = document.getElementById('disabled-info').disabled = false;
+            console.log('disabled');
+        }
+        removeDisable()">EDIT
+    </button>
+    <button class="order-button" form="order-form" type="submit">CONFIRM</button>
+</div>
+<script src="js/menuhandler.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order summary</title>
+    <link type="text/css" rel="stylesheet" href="css/desktop.css"/>
+    <link type="text/css" rel="stylesheet" href="css/mobile.css"/>
+    <link type="text/css" rel="stylesheet" href="css/tablet.css"/></head>
+<body>
+
+<nav role="navigation" class="nav-bar">
+    <div class="top-nav">
+        <a href="index.html"><img id="logo" src="images/logo_hertz_app.png" alt="Hertz logo, click for home"></a>
+        <form class="language-chooser" name="choose language">
+            <label class="language-label" for="languages">En/en</label>
+            <select name="languages" id="languages">
+                <option name="english" value="english">
+                    English
+                </option>
+                <option name="norsk" value="norsk">
+                    Norsk
+                </option>
+                <option name="deutsch" value="deutsch">
+                    Deutsch
+                </option>
+            </select>
+            <div id="line-between-lan-and-sign"></div>
+        </form>
+        <div class="sign-up-button">
+            <a href="service_not_implemented_yet.html">Log In/Sign Up</a>
+        </div>
+    </div>
+    <ul class="menu-bar">
+        <li><a href="car_list.html">CAR GUIDE</a></li>
+        <li class="active-link"><a href="index.html">CAR HIRE</a></li>
+        <li><a href="service_not_implemented_yet.html">LOCATIONS</a></li>
+        <li><a href="service_not_implemented_yet.html">BUSINESS HIRE</a></li>
+        <li><a href="service_not_implemented_yet.html">OFFERS</a></li>
+        <li><a href="service_not_implemented_yet.html">HELP</a></li>
+        <li><a href="service_not_implemented_yet.html">GOLD PLUS REWARDS</a></li>
+    </ul>
+    <nav role="navigation" id="collapsed-menu">
+        <button onclick=openmenu()>MENU</button>
+        <ul id="collapsed-menu-bar" class="hide-collapsed-menu">
+            <li><a href="car_list.html">CAR GUIDE</a></li>
+            <li><a href="index.html">CAR HIRE</a></li>
+            <li><a href="service_not_implemented_yet.html">LOCATIONS</a></li>
+            <li><a href="service_not_implemented_yet.html">BUSINESS HIRE</a></li>
+            <li><a href="service_not_implemented_yet.html">OFFERS</a></li>
+            <li><a href="service_not_implemented_yet.html">HELP</a></li>
+            <li><a href="service_not_implemented_yet.html">GOLD PLUS REWARDS</a></li>
+            <li>
+                <label class="language-label" for="languages_collapsed">EN/en</label>
+                <select name="languages" id="languages_collapsed">
+                    <option name="english" value="english">
+                        English
+                    </option>
+                    <option name="norsk" value="norsk">
+                        Norsk
+                    </option>
+                    <option name="deutsch" value="deutsch">
+                        Deutsch
+                    </option>
+                </select>
+            </li>
+            <li><a href="service_not_implemented_yet.html">LOG IN/SIGN UP</a></li>
+        </ul>
+    </nav>
+</nav>
+
+<div id="recap-div">
+    <h1>Thank you for your order</h1>
+    <div>
+        <p>Name:<span> Ola Nordmann</span></p>
+        <p>Email:<span> ola.nordmann@gmail.com</span></p>
+        <p>Location code:<span> FLE2365</span></p>
+        <p>Pickup time:<span> 02.02.2020 20:00</span></p>
+        <p>Return time:<span> 02.10.2020 20:20</span></p>
+        <p>Car category:<span> A</span></p>
+        <p>Rewardspoints used: <span> 2.000.400</span></p>
+        <p>Discounts:<span> none</span></p>
+    </div>
+    <a href="index.html">Back to main page</a>
+</div>
+<script src="js/menuhandler.js"></script>
+</body>
+</html>

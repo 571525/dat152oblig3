@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car hire</title>
+    <link type="text/css" rel="stylesheet" href="css/desktop.css"/>
+    <link type="text/css" rel="stylesheet" href="css/mobile.css"/>
+    <link type="text/css" rel="stylesheet" href="css/tablet.css"/>
+</head>
+<body>
+
+<nav role="navigation" class="nav-bar">
+    <div class="top-nav">
+        <a href="index.html"><img id="logo" src="images/logo_hertz_app.png" alt="Hertz logo, click for home"></a>
+        <form class="language-chooser" name="choose language">
+            <label class="language-label" for="languages">En/en</label>
+            <select name="languages" id="languages">
+                <option name="english" value="english">
+                    English
+                </option>
+                <option name="norsk" value="norsk">
+                    Norsk
+                </option>
+                <option name="deutsch" value="deutsch">
+                    Deutsch
+                </option>
+            </select>
+            <div id="line-between-lan-and-sign"></div>
+        </form>
+        <div class="sign-up-button">
+            <a href="service_not_implemented_yet.html">Log In/Sign Up</a>
+        </div>
+    </div>
+    <ul class="menu-bar">
+        <li><a href="car_list.html">CAR GUIDE</a></li>
+        <li class="active-link"><a href="index.html">CAR HIRE</a></li>
+        <li><a href="service_not_implemented_yet.html">LOCATIONS</a></li>
+        <li><a href="service_not_implemented_yet.html">BUSINESS HIRE</a></li>
+        <li><a href="service_not_implemented_yet.html">OFFERS</a></li>
+        <li><a href="service_not_implemented_yet.html">HELP</a></li>
+        <li><a href="service_not_implemented_yet.html">GOLD PLUS REWARDS</a></li>
+    </ul>
+    <nav role="navigation" id="collapsed-menu">
+        <button onclick=openmenu()>MENU</button>
+        <ul id="collapsed-menu-bar" class="hide-collapsed-menu">
+            <li><a href="car_list.html">CAR GUIDE</a></li>
+            <li><a href="index.html">CAR HIRE</a></li>
+            <li><a href="service_not_implemented_yet.html">LOCATIONS</a></li>
+            <li><a href="service_not_implemented_yet.html">BUSINESS HIRE</a></li>
+            <li><a href="service_not_implemented_yet.html">OFFERS</a></li>
+            <li><a href="service_not_implemented_yet.html">HELP</a></li>
+            <li><a href="service_not_implemented_yet.html">GOLD PLUS REWARDS</a></li>
+            <li>
+                <label class="language-label" for="languages_collapsed">EN/en</label>
+                <select name="languages" id="languages_collapsed">
+                    <option name="english" value="english">
+                        English
+                    </option>
+                    <option name="norsk" value="norsk">
+                        Norsk
+                    </option>
+                    <option name="deutsch" value="deutsch">
+                        Deutsch
+                    </option>
+                </select>
+            </li>
+            <li><a href="service_not_implemented_yet.html">LOG IN/SIGN UP</a></li>
+        </ul>
+    </nav>
+</nav>
+
+<div class="res-div">
+    <img src="images/940x762-nordic-autumn-sale-carousel-no.jpg"
+         alt="Image with a road, trees and water promoting nordisk høstsalg"/>
+
+    <div id="res-form-index">
+        <form role="form" action="order_form.html">
+            <div>
+                <label for="place-or-city-code"><h3>Place or airportcode (city, country or airportcode)</h3>
+                </label><input
+                    id="place-or-city-code" name="placeO3rCity" type="text">
+            </div>
+            <div>
+                <input type="checkbox" role="checkbox" id="return-different-place-checkbox"><label
+                    for="return-different-place-checkbox" id="label-return-dif-place">I'm gonna deliver the vehicle to
+                another location</label>
+            </div>
+            <div>
+                <h3>Pickup:</h3>
+                <label for="pickup-input"><p>(DD.MM.YYYY)</p></label>
+                <input type="date" id="pickup-input">
+                <label for="pickup-time"><p>Time:</p></label><input type="time" id="pickup-time">
+            </div>
+            <div>
+                <h3>Return:</h3>
+                <label for="return-input"><p>(DD.MM.YYYY)</p></label>
+                <input type="date" id="return-input">
+                <label for="return-time"><p>Time:</p></label><input type="time" id="return-time">
+            </div>
+            <div id="res-form-hr"></div>
+            <div>
+                <label for="car-type-input"><h3>Cartype:</h3></label>
+                <select id="car-type-input" name="carType">
+                    <option value="A" value="A">A</option>
+                    <option value="B" value="B">B</option>
+                    <option value="C" value="C">C</option>
+                    <option value="D" value="D">D</option>
+                    <option value="EL" value="EL">EL</option>
+                </select>
+            </div>
+            <div>
+                <a href="car_list.html">More information</a>
+            </div>
+            <div id="use-reward-points-div">
+                <input type="checkbox" id="use-reward-points-checkbox"><label for="use-reward-points-checkbox">Use
+                my
+                Rewardspoints</label></div>
+            <div id="i-have-discount-div">
+                <input type="checkbox" id="i-have-discount-checkbox"><label for="i-have-discount-checkbox">I have
+                discount (CDP, PC, Coupong or different code -</label></div>
+            <div>
+                <input type="submit" name="guest" value="Order as guest" id="order-button-guest"
+                       class="order-button">
+                <input type="submit" name="member" value="Order as member" id="order-button-member"
+                       class="order-button">
+            </div>
+        </form>
+    </div>
+</div>
+<script src="js/menuhandler.js"></script>
+</body>
+</html>
