@@ -19,20 +19,15 @@
 
     #res-form-index {
         background-color: white;
-        width: 96%;
-        left: 2%;
-        height: 100%;
-        top: 1em;
-        position: absolute;
+        width: 100%;
+        padding: 1%;
     }
 
     #error-message {
-        position: absolute;
-        top: 5em;
-        margin-left: 3%;
+        border: 5px solid black;
         background-color: #ffd100;
-        width: 94%;
-        height: 80%;
+        width: 100%;
+        height: 20em;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -42,10 +37,6 @@
     }
 
     .res-div {
-        position: absolute;
-        background-color: black;
-        top: 5em;
-        bottom: 1em;
         width: 100%;
     }
 
@@ -98,17 +89,39 @@
         margin-top: .5em;
     }
 
+    #edit-button {
+        color: #ffd100;
+        background-color: #242323;
+        border: 2px solid #242323;
+        font-size: large;
+        padding: 1em;
+    }
+
+    #edit-button:hover {
+        color: #242323;
+        background-color: #ffd100;
+    }
+
+    #confirm-button {
+        color: #242323;
+        background-color: lawngreen;
+        border: 2px solid lawngreen;
+        font-size: large;
+        padding: 1em;
+    }
+
+    #confirm-button:hover {
+        background-color: #ffd100;
+        border-color: #ffd100;
+    }
+
     #order-button-member {
         background-color: darkblue;
         color: white;
         border: .1em solid darkblue;
     }
 
-    #order-button-guest, #res-form-order-page button {
-        background-color: #ffd100;
-        color: black;
-        border: 2px solid #ffd100;
-    }
+
 
     #order-button-member:hover {
         background-color: white;
@@ -185,6 +198,10 @@
         font-weight: bold;
     }
 
+    #order-form input::placeholder {
+        color: darkblue;
+    }
+
     #order-form fieldset {
         padding: 1em;
         margin-bottom: 2em;
@@ -197,6 +214,7 @@
 
     #car-list-div {
         margin: 2em;
+        width: 100%;
     }
 
     #car-list-div > ul > li {
@@ -206,6 +224,11 @@
 
     h2 {
         margin-bottom: 1em;
+    }
+
+    .clr{
+        clear:both;
+        font-size:0;
     }
 
     .car-info-div {
@@ -248,8 +271,9 @@
 
 
     #recap-div {
-        margin: 2em;
-        position: relative;
+        width: 100%;
+        padding: 10%;
+        background-color: white;
         overflow-wrap: break-word;
     }
 
@@ -280,10 +304,86 @@
         text-align: center;
         border: .2em solid #ffd100;
     }
-}
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+    .splitHr {
+        display: none;
+    }
+
+    .bottomContent {
+        display: none;
+    }
+
+    .selectedTab {
+        background-color: rgb(255, 207, 63);
+    }
+
+    .formItem {
+        margin-bottom: 20px;
+    }
+
+    .submitButton {
+        background-color: black;
+        border: 1px solid #ffd100;
+        padding: 1em;
+        color: #ffd100;
+    }
+
+    #newsletter, #newsletter form {
+        margin: 1em 0em;
+        display: inline-flex;
+        width: 100%;
+    }
+
+    .newsletterInput {
+        color: white;
+        background-color: #242323;
+        border: 1px solid #242323;
+        height: 2em;
+        padding: 2em;
+        margin-left: 5%;
+    }
+
+    .newsletterInput::placeholder {
+        color: white;
+        font-size: large;
+    }
+
+    .socialMediaBar {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        background-color: black;
+    }
+
+    #socialMediaLinks {
+        margin-right: auto;
+    }
+
+    #socialMediaLinks ul {
+        list-style-type: none;
+    }
+
+    #socialMediaLinks li {
+        margin: 1em 1em;
+        font-size: large;
+    }
+
+    #socialMediaLinks a,
+    #socialMediaLinks a:visited {
+        color: #ffd100;
+    }
+
+    #socialMediaLinks a:hover {
+        text-decoration: underline;
+    }
+
+    a,
+    a:visited {
+        text-decoration: none;
+    }
+
+    body {
+        background-color: white;
+    }
 }

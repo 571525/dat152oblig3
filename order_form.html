@@ -74,8 +74,9 @@
         <div>
             <label for="name">Name:</label><span class="red-text">(required)</span><input type="text" id="name" placeholder="Full name" required>
         </div>
-        <label for="email">Email:</label><span class="red-text">(required)</span><input type="email" id="email" required>
+        <label for="email">Email:</label><span class="red-text">(required)</span><input type="email" id="email" placeholder="Email" required>
         <fieldset id="disabled-info" disabled="disabled">
+            <legend>Order info</legend>
             <div>
                 <label for="place-or-citycode">Place/city/airportcode:</label><input id="place-or-citycode" type="text" value="FLE1234">
             </div>
@@ -111,14 +112,50 @@
             </div>
         </fieldset>
     </form>
-    <button class="order-button" onclick="function removeDisable() {
+    <button id="edit-button" onclick="function removeDisable() {
             let a = document.getElementById('disabled-info').disabled = false;
             console.log('disabled');
         }
         removeDisable()">EDIT
     </button>
-    <button class="order-button" form="order-form" type="submit">CONFIRM</button>
+    <button class="order-button" id="confirm-button" form="order-form" type="submit">CONFIRM</button>
 </div>
+<hr class="splitHr">
+
+<div class="bottomContent">
+    <div>
+        <h1>Hertz Car Hire</h1>
+    </div>
+    <div>
+
+        Welcome to Hertz Car Hire. Rent a car online now from one of our worldwide locations. With over 90 years’
+        experience in car and van rentals, take advantage of our large vehicle rental selection and make your
+        booking online instantly. With all the best offers and deals on car rental on the website right now, and the
+        option to pay online or upon collection of your car, Hertz.no is the best place to book your car hire. Start
+        your booking process using the reservation system above or check out latest car rental offers and van hire
+        promotions that are currently available.
+    </div>
+</div>
+</div>
+<hr class="splitHr">
+<div class="socialMediaBar">
+    <div id="newsletter">
+        <form>
+            <input aria-label="Sign up for newsletter" type="text" placeholder="Sign up for newsletter"
+                   class="newsletterInput">
+            <input type="submit" value="Sign up" class="submitButton"/>
+        </form>
+    </div>
+    <div id="socialMediaLinks">
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Linkedin</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Reddit</a></li>
+        </ul>
+    </div>
+</div>
+<hr class="splitHr">
 <script src="js/menuhandler.js"></script>
 </body>
 </html>

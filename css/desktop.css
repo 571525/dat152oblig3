@@ -58,7 +58,7 @@
         margin-right: 2%;
     }
 
-    .sign-up-button, #res-form-order-page button {
+    .sign-up-button {
         background-color: #ffd100;
         border: .2em solid #ffd100;
         padding: 1em;
@@ -69,7 +69,7 @@
         color: black;
     }
 
-    .sign-up-button:hover, #res-form-order-page button:hover {
+    .sign-up-button:hover {
         background-color: black;
         color: #ffd100;
     }
@@ -120,10 +120,10 @@
 
     #res-form-index {
         background-color: white;
-        width: 35em;
+        width: 27em;
         position: absolute;
         top: 1.5em;
-        left: 1.5em;
+        left: 8%;
     }
 
     #res-form-index a {
@@ -131,13 +131,10 @@
     }
 
     #error-message {
-        position: absolute;
-        top: 1em;
-        left: 0em;
         margin-left: 10%;
         background-color: #ffd100;
         width: 80%;
-        height: 50%;
+        height: 30em;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -148,10 +145,14 @@
 
     .res-div {
         position: relative;
+        background-color: black;
+        overflow: hidden;
     }
 
     .res-div img {
-        width: 100%;
+        width:  100%;
+        min-width: 75em;
+        max-width: 100em;
     }
 
     .res-div h3 {
@@ -198,6 +199,32 @@
         margin: 1em;
     }
 
+    #edit-button {
+        color: #ffd100;
+        background-color: #242323;
+        border: 2px solid #242323;
+        font-size: large;
+        padding: 1em;
+    }
+
+    #edit-button:hover {
+        color: #242323;
+        background-color: #ffd100;
+    }
+
+    #confirm-button {
+        color: #242323;
+        background-color: lawngreen;
+        border: 2px solid lawngreen;
+        font-size: large;
+        padding: 1em;
+    }
+
+    #confirm-button:hover {
+        background-color: #ffd100;
+        border-color: #ffd100;
+    }
+
     #order-button-member {
         background-color: darkblue;
         color: white;
@@ -230,10 +257,12 @@
     }
 
     #car-list-div {
-        margin: 2em;
+        padding: 2em;
+        width: 100%;
+        background: white;
     }
 
-    #car-list-div > ul > li {
+    #car-list-div  ul > li {
         list-style-type: none;
         float: left;
     }
@@ -244,8 +273,10 @@
 
     .car-info-div {
         margin: .3em;
+        width: 20em;
         border: .1em solid black;
         padding: 2em;
+        background-color: white;
     }
 
     .car-info-div img {
@@ -260,7 +291,7 @@
         display: block;
         text-align: center;
         border: .2em solid #ffd100;
-        margin-top: 1em;
+        margin-top: 3em;
     }
 
     .car-info-div a:hover {
@@ -280,7 +311,9 @@
     }
 
     #res-form-order-page {
-        margin: 2em;
+        padding: 2%;
+        width: 100%;
+        background-color: white;
     }
 
     #order-form input[type="text"], input[type="email"], input[type="date"], input[type="time"], select {
@@ -292,14 +325,19 @@
         font-weight: bold;
     }
 
+    #order-form input::placeholder {
+        color: darkblue;
+    }
+
     #order-form fieldset {
         padding: 1em;
         margin-bottom: 2em;
     }
 
     #recap-div {
-        margin: 2em;
-        position: relative;
+        width: 100%;
+        padding: 10%;
+        background-color: white;
     }
 
     #recap-div p {
@@ -333,10 +371,111 @@
         border: .2em solid #ffd100;
     }
 
+    .splitHr {
+        border-color: #ffd100;
+    }
+
+    .bottomContent {
+        display: inline-flex;
+        padding: 1em;
+        margin: 1.5em 0em;
+    }
+
+    .bottomContent div:nth-child(1) {
+        color: rgb(255, 207, 63);
+        margin: auto 7em auto 2em;
+        white-space: nowrap;
+    }
+
+    .bottomContent div:nth-child(2) {
+        font-size: 1.2em;
+        vertical-align: center;
+        color: rgb(255, 207, 63);
+        text-align: center;
+    }
+
+    .selectedTab {
+        background-color: rgb(255, 207, 63);
+    }
+
+    .formItem {
+        margin-bottom: 20px;
+    }
+
+    .submitButton {
+        background-color: black;
+        border: 1px solid #ffd100;
+        padding: 1em;
+        color: #ffd100;
+        font-size: large;
+    }
+
+    #newsletter {
+        margin: 1em 0em;
+    }
+
+    .newsletterInput {
+        color: white;
+        background-color: #242323;
+        border: 1px solid #242323;
+        padding: 1.5em;
+        height: 2em;
+        width: 20em;
+        margin-left: 2em;
+    }
+
+    .newsletterInput::placeholder {
+        color: white;
+        font-size: large;
+    }
+
+    .socialMediaBar {
+        display: flex;
+        align-items: center;
+    }
+
+    #socialMediaLinks {
+        margin-left: auto;
+    }
+
+    #socialMediaLinks ul {
+        list-style-type: none;
+        display: inline-flex;
+    }
+
+    #socialMediaLinks li {
+        margin: 1em 1em;
+        font-size: x-large;
+    }
+
+    #socialMediaLinks a,
+    #socialMediaLinks a:visited {
+        color: #ffd100;
+    }
+
+    #socialMediaLinks a:hover {
+        text-decoration: underline;
+    }
+
+    a,
+    a:visited {
+        text-decoration: none;
+    }
+
+    body {
+        background-color: black;
+    }
+
+    .clr{
+        clear:both;
+        font-size:0;
+    }
+
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto';
 }
