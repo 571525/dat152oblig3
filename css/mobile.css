@@ -122,11 +122,16 @@
     }
 
 
-
     #order-button-member:hover {
         background-color: white;
         color: darkblue;
         border: .1em solid darkblue;
+    }
+
+    #order-button-guest {
+        background-color: #ffd100;
+        color: black;
+        border: .1em solid #ffd100;
     }
 
     #order-button-guest:hover, #res-form-order-page button:hover {
@@ -326,13 +331,12 @@
         background-color: black;
         border: 1px solid #ffd100;
         padding: 1em;
+        margin-left: 1.1em;
         color: #ffd100;
     }
 
     #newsletter, #newsletter form {
         margin: 1em 0em;
-        display: inline-flex;
-        width: 100%;
     }
 
     .newsletterInput {
