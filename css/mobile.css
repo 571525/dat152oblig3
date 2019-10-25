@@ -247,6 +247,11 @@
         width: 10em;
     }
 
+    #collapsed-menu li a:focus {
+        color: black;
+        background-color: #ffd100;
+    }
+
     .car-info-div a {
         background-color: #ffd100;
         color: black;

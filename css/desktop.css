@@ -22,6 +22,11 @@
         background-color: black;
     }
 
+    .menu-bar li a:focus {
+        color: black;
+        background-color: #ffd100;
+    }
+
     .top-nav {
         display: inline-flex;
     }
